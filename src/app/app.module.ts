@@ -6,6 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { IndexComponent } from './index/index.component';
 import { LoginComponent } from './login/login.component';
+import { SignupComponent } from './signup/signup.component';
 
 const myroute:Routes=[
 
@@ -16,6 +17,10 @@ const myroute:Routes=[
   {
     path:"login",
     component:LoginComponent
+  },
+  {
+    path:"signup",
+    component:SignupComponent
   }
 
 ]
@@ -24,7 +29,8 @@ const myroute:Routes=[
   declarations: [
     AppComponent,
     IndexComponent,
-    LoginComponent
+    LoginComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule,
